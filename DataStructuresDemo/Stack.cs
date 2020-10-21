@@ -54,5 +54,14 @@ namespace DataStructuresDemo
             Console.WriteLine("Element popped out is: " + this.top.data);
             this.top = this.top.next;
         }
+
+        internal void isEmpty()
+        {
+            while (this.top != null)
+            {
+                Peek();
+                Pop();
+            }
+        }
     }
 }
