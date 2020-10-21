@@ -34,5 +34,25 @@ namespace DataStructuresDemo
                 temp = temp.next;
             }
         }
+
+        internal void Peek()
+        {
+            if (this.top == null)
+            {
+                Console.WriteLine("Stack is already Empty!");
+                return;
+            }
+            Console.WriteLine(this.top.data + " is on the top");
+        }
+
+        internal void Pop()
+        {
+            if (this.top == null)
+            {
+                Console.WriteLine("Stack is already Empty!");
+            }
+            Console.WriteLine("Element popped out is: " + this.top.data);
+            this.top = this.top.next;
+        }
     }
 }
